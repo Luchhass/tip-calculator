@@ -1,0 +1,248 @@
+/* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+
+/* MOBİLE */
+
+body {
+    background-color: #C5E4E7;
+    font-family: "Space Mono", monospace;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 25px 25px 0px 0px;
+    padding: 32px;
+}
+
+.img_container {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.img_container img {
+    margin: 0 auto;
+}
+
+
+.select_section h3 {
+    width: auto;
+    color: #5E7A7D;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    margin-bottom: 6px;
+}
+
+.select_section_texts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill {
+    width: 311px;
+    height: 48px;
+    color: #00474B;
+    background-color: #F3F9FA;
+    border: none;
+    text-align: end;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35.54px;
+    text-align: right;
+}
+
+.select_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+
+.select_tip {
+    color: #FFFFFF;
+    background-color: #00474B;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35.54px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 146px;
+    height: 48px;
+}
+
+.custom_tip {
+    width: 146px;
+    height: 48px;
+    color: #547878;
+    background-color: #F3F9FA;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 35.54px;
+    border-radius: 5px;
+    border: none;
+}
+
+.custom_tip::placeholder {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.people {
+    width: 311px;
+    height: 48px;
+    color: #00474B;
+    background-color: #F3F9FA;
+    border: none;
+    text-align: end;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35.54px;
+    text-align: right;
+}
+
+.reset_section {
+    background-color: #00474B;
+    border-radius:18px;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tips {
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset_texts h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+    text-align: left;
+}
+
+.reset_texts h3 {
+    color: #7F9D9F;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.25px;
+    text-align: left;
+}
+
+.tip_amount {
+    color: #26C2AE;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47.39px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: right;
+}
+
+.total {
+    color: #26C2AE;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47.39px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: right;
+}
+
+.reset {
+    width: 281px;
+    height: 48px;
+    background-color: #26C2AE;
+    color: #00474B;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.62px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+@media(width >= 1440px) {
+   .container {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+   }
+
+   .select_section {
+    width: 379px;
+   }
+
+   .reset_section {
+    width: 413px;
+    padding: 40px;
+   }
+
+   .bill {
+    width: 379px;
+   }
+
+   .select_tip {
+    width: 115px;
+   }
+
+   .select_buttons {
+    justify-content: space-between;
+   }
+
+   .custom_tip {
+    width: 110px;
+   }
+
+   .people {
+    width: 379px;
+   }
+
+   .tips {
+    width: 333px;
+    align-items: center;
+   }
+
+   .reset {
+    width: 333px;
+   }
+}
