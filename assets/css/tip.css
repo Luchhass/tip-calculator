@@ -1,4 +1,3 @@
-/* CSS RESET */
 *,
 *::before,
 *::after {
@@ -40,7 +39,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* Base Styles */
 body {
   background-color: #c5e4e7;
   font-family: "Space Mono", monospace;
@@ -53,7 +51,7 @@ body {
 }
 
 .img_container {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   flex-shrink: 0;
 }
 
@@ -67,13 +65,12 @@ body {
   width: 100%;
   max-width: 375px;
   background-color: #ffffff;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px;
   padding: 32px;
   box-shadow: 0 32px 43px rgba(79, 166, 175, 0.200735);
   margin-top: auto;
 }
 
-/* Select Section */
 .select_section h3 {
   color: #5e7a7d;
   font-size: 16px;
@@ -123,11 +120,11 @@ body {
 }
 
 .select_buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 16px;
   margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .select_tip {
@@ -166,6 +163,7 @@ body {
   height: 48px;
   padding: 6px 17px;
   transition: border-color 0.3s ease;
+  width: 100%;
 }
 
 .custom_tip:focus {
@@ -207,7 +205,6 @@ body {
   border-color: #e17052;
 }
 
-/* Reset Section */
 .reset_section {
   background-color: #00474b;
   border-radius: 15px;
@@ -273,14 +270,13 @@ body {
   background-color: #26c2ae;
 }
 
-/* Tablet Responsive (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
     padding: 40px;
   }
 
   .img_container {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .container {
@@ -305,17 +301,16 @@ body {
   }
 }
 
-/* Desktop Responsive (1024px+) */
 @media (min-width: 1024px) {
   body {
-    padding: 80px 40px;
+    padding: 40px;
     justify-content: flex-start;
     min-height: 100vh;
   }
 
   .img_container {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .container {
@@ -383,51 +378,12 @@ body {
   }
 }
 
-/* Large Desktop (1440px+) */
-@media (min-width: 1440px) {
-  body {
-    padding: 163px 40px;
-  }
-
-  .img_container {
-    margin-bottom: 88px;
-  }
-
-  .container {
-    box-shadow: 0 32px 43px rgba(79, 166, 175, 0.200735);
-  }
-
-  .tip_amount,
-  .total {
-    font-size: 48px;
-    line-height: 71px;
-    letter-spacing: -1px;
-  }
-}
-
-/* Ultra Wide (1920px+) */
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1100px;
-  }
-
-  .select_section {
-    max-width: 450px;
-  }
-
-  .reset_section {
-    max-width: 500px;
-  }
-}
-
-/* Input States */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -436,14 +392,12 @@ input::-webkit-inner-spin-button {
   }
 }
 
-/* Focus management */
 button:focus,
 input:focus {
   outline: 2px solid #26c2ae;
   outline-offset: 2px;
 }
 
-/* High contrast mode */
 @media (prefers-contrast: high) {
   .select_tip,
   .reset {
